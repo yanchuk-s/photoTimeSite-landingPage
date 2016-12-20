@@ -103,6 +103,7 @@ a, a:hover{text-decoration: none;}
 .socIcons{padding-top: 120px;padding-bottom: 50px;}
 .socIcons a{text-decoration: none;}
 .socIcons a:hover{text-decoration: none;}
+.socIcons a:focus{text-decoration: none;}
 .socIcon{display: inline; font-size: 35px; color: #ffffff;text-decoration: none;}
 .socIcon:hover{text-decoration: none; color:#16a085; }
 
@@ -178,7 +179,7 @@ nav{margin-top: 40px;}
 
 /*--------------------------------------SECOND PAGE --------------- --*/
 
-.secondPage{padding-top: 130px;}
+.secondPage{padding-top: 130px;padding-bottom: 70px;}
 .secondPage img {max-width: 400px;max-height: 400px;height: auto;width: auto;}
 .secondPage h1{color: #16a085;font-family: "Florence", cursive;}
 .secondPage p{font-family: "Brushstroke", cursive;color:#373737;font-size: 18px;}
@@ -187,9 +188,82 @@ nav{margin-top: 40px;}
 
 .secondtext{display: none;}
 #iphoneImg{display: none;}
+
+@media all and (max-width: 600px) {
+	.secondtext{display: block;}
+#iphoneImg{display:block;}
+}
+
+
 /*--------------------------------------SECOND PAGE END--------------- --*/
 
 
+/*--------------------------------------THREE PAGE --------------- --*/
+
+.threePage{background-color: #f5f6f7;padding-top: 70px; padding-bottom: 70px;}
+#iphoneImgThr{max-width: 450px; max-height: 450px;}
+.threePage h1{color: #16a085;font-family: "Florence", cursive;}
+.threePage p{font-family: "Brushstroke", cursive;color:#373737;font-size: 18px;}
+
+
+/*--------------------------------------THREE PAGE END --------------- --*/
+
+/*--------------------------------FOUR PAGE ------------------------------*/
+
+.fourpage {padding-top: 60px; padding-bottom: 60px; text-align: center}
+.fourpage a{cursor: pointer;}
+/*SLIDER---------*/
+.Controls{float: right;padding-bottom: 15px;}
+.idikat { text-decoration: none; font-size: 16px; color: black;
+background:none;
+	padding: 10px;
+z-index: 9999;
+}
+
+.idikat:hover{text-decoration: none; color: #fb2539;}
+.idikat:link{text-decoration: none;}
+
+.pohog{
+	max-width: 350px;
+	max-height: 350px;
+	width:auto;
+	height: auto;
+}
+.RelatedTovar{padding: 40px 0;
+}
+.RelatedTovar h5{color: #999999;}
+.RelatedTovar h2 p{color: #333333;}
+
+/*SLIDER END--------------*/
+
+/*--------------------------------FOUR PAGE ENDD ------------------------------*/
+
+
+/*************************************FIVE PAGE  ****************************************/
+
+.fivepage{
+	height: 700px;
+	background: #1d1520 url(../img/bg2.jpg) no-repeat center bottom;
+	 width: 100%;
+    background-attachment: fixed;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	;
+	text-align: center;
+}
+.fivepage h2{
+	color: #ffffff;font-family: "Brushstroke", cursive;text-transform: uppercase;padding-top: 270px;
+}
+
+.inputCss {
+	padding: 10px 25px;
+	border-radius: 7px;
+}
+.submit{padding-top: 6px;padding-bottom: 12px;padding-left: 10px;padding-right: 10px;font-size: 22px;background-color: #16a085;border-radius: 7px;color: aliceblue;text-decoration: none;}
+
+/*************************************FIVE PAGE END ****************************************/
 
 .box{white-space:nowrap}
 .box a{width:90px;display:inline-block;border:1px solid black}
