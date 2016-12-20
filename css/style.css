@@ -1,0 +1,177 @@
+html, body, div, span, object, h1, h2 ,h3,h4,h5,h6,p,a,b,u,i,center,ol,ul,li,table,caption{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+html{height: 100%;}
+body{
+	height: 100%;
+	background-color: #FFF;
+}
+
+ol, ul {list-style: none;}
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a, a:hover{text-decoration: none;}
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {clear:both;}
+
+.left{float: left;}
+.right{float: right;}
+
+
+/*----------------------HOME PAGE---------------------------*/
+
+.homePage{
+	height: auto;
+	background: #1d1520 url(../img/bg.jpg) no-repeat center bottom;
+	 width: 100%;
+    background-attachment: fixed;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	padding-bottom: 35px;
+	text-align: center;
+}
+
+.homePage h1{font-size: 50px;  color: #ffffff;font-family: "Brushstroke", cursive;text-transform: uppercase;margin-top: 170px;}
+
+.homePage p{font-size: 25px;  color: #ffffff;font-family: "Brushstroke", cursive;text-transform: lowercase;}
+/* Float */
+.hvr-float {
+	margin-top: 30px;
+	padding: 20px 60px;
+	background-color: #16a085;
+	color: #ffffff;font-family: "Andale Mono", monospace;text-transform: uppercase;font-size: 20px;
+	cursor: pointer;
+	text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+	text-decoration: none;
+	color: #16a085;
+	background-color: #d3baba;
+	
+}
+
+@media all and (max-width: 600px) {
+	.homePage h1{font-size: 25px;margin-top: 30px;}
+	.hvr-float{margin-top: 10px;}
+	.socIcons{padding-top: 10px;}
+}
+
+
+.menu-trigger{
+  display:none;
+  color: #777777;
+	width: auto;
+	text-align: center;
+	font-size: 14px;
+	text-decoration: none
+
+}
+
+.socIcons{padding-top: 120px;padding-bottom: 50px;}
+.socIcons a{text-decoration: none;}
+.socIcons a:hover{text-decoration: none;}
+.socIcon{display: inline; font-size: 35px; color: #ffffff;text-decoration: none;}
+.socIcon:hover{text-decoration: none; color:#16a085; }
+
+/*-------NAVBAR ---------*/
+nav{margin-top: 15px;}
+.navbar li{display: inline; font-size: 23px; color: #ffffff;font-family: "Florence", cursive;padding: 20px;}
+
+
+/* Push */
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.hvr-push {
+	cursor: pointer;
+	color: aliceblue;
+	text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-push:hover, .hvr-push:focus, .hvr-push:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+	text-decoration: none;
+	color: #f7c6c6;
+}
+
+#adapmenu{display: none; padding: 10px;cursor: pointer;font-size: 20px;}
+#logoAdap{display: none;margin-left: 45%;margin-right: 45%;}
+.fa-bars {margin-right: 10px;}
+
+@media all and (max-width: 600px) {
+	#adapmenu{display: block;}
+	.navbar {display: none;}
+	.navbar li{display: block;font-size: 14px;}
+	#logoimg{display: none;}
+	#logoAdap{display: block;}
+}
+
+/*-------NAVBAR END---------*/
+
+
+/*----------------------HOME PAGE END---------------------------*/
+.box{white-space:nowrap}
+.box a{width:90px;display:inline-block;border:1px solid black}
+
+
+.box a:last-child{float: right;}
