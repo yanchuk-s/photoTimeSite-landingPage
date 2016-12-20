@@ -50,11 +50,12 @@ a, a:hover{text-decoration: none;}
 	text-align: center;
 }
 
-.homePage h1{font-size: 50px;  color: #ffffff;font-family: "Brushstroke", cursive;text-transform: uppercase;margin-top: 170px;}
+.homePage h1{font-size: 50px;  color: #ffffff;font-family: "Brushstroke", cursive;text-transform: uppercase;margin-top: 150px;}
 
 .homePage p{font-size: 25px;  color: #ffffff;font-family: "Brushstroke", cursive;text-transform: lowercase;}
 /* Float */
 .hvr-float {
+	border-radius: 7px;
 	margin-top: 30px;
 	padding: 20px 60px;
 	background-color: #16a085;
@@ -106,7 +107,7 @@ a, a:hover{text-decoration: none;}
 .socIcon:hover{text-decoration: none; color:#16a085; }
 
 /*-------NAVBAR ---------*/
-nav{margin-top: 15px;}
+nav{margin-top: 40px;}
 .navbar li{display: inline; font-size: 23px; color: #ffffff;font-family: "Florence", cursive;padding: 20px;}
 
 
@@ -156,6 +157,10 @@ nav{margin-top: 15px;}
 
 #adapmenu{display: none; padding: 10px;cursor: pointer;font-size: 20px;}
 #logoAdap{display: none;margin-left: 45%;margin-right: 45%;}
+
+
+
+
 .fa-bars {margin-right: 10px;}
 
 @media all and (max-width: 600px) {
@@ -164,12 +169,28 @@ nav{margin-top: 15px;}
 	.navbar li{display: block;font-size: 14px;}
 	#logoimg{display: none;}
 	#logoAdap{display: block;}
+	nav{margin-top: 10px;}
 }
 
 /*-------NAVBAR END---------*/
 
-
 /*----------------------HOME PAGE END---------------------------*/
+
+/*--------------------------------------SECOND PAGE --------------- --*/
+
+.secondPage{padding-top: 130px;}
+.secondPage img {max-width: 400px;max-height: 400px;height: auto;width: auto;}
+.secondPage h1{color: #16a085;font-family: "Florence", cursive;}
+.secondPage p{font-family: "Brushstroke", cursive;color:#373737;font-size: 18px;}
+#getSec{background-color:#16a085; }
+#getSec:hover{color: aliceblue;background-color: #d3baba;} 
+
+.secondtext{display: none;}
+#iphoneImg{display: none;}
+/*--------------------------------------SECOND PAGE END--------------- --*/
+
+
+
 .box{white-space:nowrap}
 .box a{width:90px;display:inline-block;border:1px solid black}
 

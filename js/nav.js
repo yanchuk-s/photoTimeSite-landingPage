@@ -1,5 +1,5 @@
 $(document).ready(function () {
-        var objToStick = $("#fix"); //Получаем нужный объект
+        var objToStick = $("#fd"); //Получаем нужный объект
         var topOfObjToStick = $(objToStick).offset().top; //Получаем начальное расположение нашего блока
 
         $(window).scroll(function () {
@@ -45,61 +45,35 @@ $(document).ready(function() {
 
 
 
+// aniamte secondtext
+$(document).ready(function () {
+        var objToStick = $(".secondtext"); //Получаем нужный объект
+        var topOfObjToStick = $(objToStick).offset().top; //Получаем начальное расположение нашего блока
+
+        $(window).scroll(function () {
+            var windowScroll = $(window).scrollTop(); //Получаем величину, показывающую на сколько прокручено окно
+
+            if (windowScroll > topOfObjToStick) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
+                $(objToStick).fadeIn(3000);
+           
+            };
+        });
+    });
 
 
-// Gallery
+// secondtext IMG
 
-$(function () {
-  "use strict";
-  
- $(".galer img").on({
-    click: function () {
-var src = $(this).attr("src");
-     $(".show img").attr("src", src)
- },
-   mouseout: function () {
-   $(".show img")
-.attr("src", src)
-  }  
-  });
-});
+$(document).ready(function () {
+        var objImg = $("#iphoneImg"); //Получаем нужный объект
+        var topOfobjImg = $(objImg).offset().top; //Получаем начальное расположение нашего блока
 
+        $(window).scroll(function () {
+            var imgScroll = $(window).scrollTop(); //Получаем величину, показывающую на сколько прокручено окно
 
-
-
-
-
-// BHOD
-
-$("#modalBhod").click(function(){
-    $("#modalmain").slideToggle("slow");
-	
-});
-$("#closeModal").click(function(){
-    $("#modalmain").slideUp("slow");
-	
-});
-
-// add tovar
-
-$("#addTovarsLink").click(function(){
-    $(".addTovars").slideDown("slow");
-	
-});
-
-$("#addTovarsLinkTwo").click(function(){
-    $(".addTovarsTwo").slideDown("slow");
-	
-});
-
-//rREGISRE
-
-$("#modalRegBtn").click(function(){
-    $("#modalReg").slideToggle("slow");
-	
-});
-$("#closemodalReg").click(function(){
-    $("#modalReg").slideUp("slow");
-	
-});
+            if (imgScroll > topOfobjImg) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
+                $(objImg).slideDown(2000);
+           
+            };
+        });
+    });
 
