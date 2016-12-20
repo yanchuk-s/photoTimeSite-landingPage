@@ -254,7 +254,7 @@ z-index: 9999;
 	text-align: center;
 }
 .fivepage h2{
-	color: #ffffff;font-family: "Brushstroke", cursive;text-transform: uppercase;padding-top: 270px;
+	color: #ffffff; font-family: "Andale Mono", monospace;text-transform: uppercase;padding-top: 270px;
 }
 
 .inputCss {
@@ -265,6 +265,22 @@ z-index: 9999;
 
 /*************************************FIVE PAGE END ****************************************/
 
+
+/*----------------------------------- SIX PAGE-----------------------------------------------------------------*/
+
+.sixpage{background-color: #f5f6f7;padding-top: 70px;padding-bottom: 70px; text-align: center;}
+
+#dewnBtn {text-decoration: none;padding: 15px 50px; margin-right: 70px;border-radius: 7px; background-color: #1abc9c;color: aliceblue;font-size: 18px;}
+
+#dewnIcon{color: #ffffff;margin-left: 30px;font-size: 20px;}
+
+.sixpage h2{color: #373737; font-family: "Andale Mono", monospace}
+.sixpage p{
+	padding-top: 15px;
+	padding-bottom: 40px;
+	font-family: "Lucidatypewriter", monospace;
+}
+/*----------------------------------- SIX PAGE END-----------------------------------------------------------------*/
 .box{white-space:nowrap}
 .box a{width:90px;display:inline-block;border:1px solid black}
 
